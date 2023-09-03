@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Tela extends JFrame{
+public class tela extends JFrame{
     private JButton clickHereButton;
     private JTextField textField1;
     private JPanel Painel;
@@ -14,7 +14,7 @@ public class Tela extends JFrame{
     private int total;
 
 
-    public Tela(){
+    public tela(){
         lblEntrada1.setVisible(false);
         lblEntrada2.setVisible(false);
 
@@ -35,7 +35,7 @@ public class Tela extends JFrame{
     }
 
     public static void main(String[] args) {
-        Tela tela = new Tela();
+        tela tela = new tela();
         tela.setContentPane(tela.Painel);
         tela.setTitle("Calculadora");
         tela.setSize(400,150);

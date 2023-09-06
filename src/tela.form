@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="tela">
-  <grid id="27dc6" binding="Painel" layout-manager="GridLayoutManager" row-count="15" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="Painel" layout-manager="GridLayoutManager" row-count="16" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="324"/>
+      <xy x="20" y="20" width="500" height="364"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -17,13 +17,13 @@
           <text value="Adicione os numeros:"/>
         </properties>
       </component>
-      <component id="c5ac8" class="javax.swing.JButton" binding="clickHereButton" default-binding="true">
+      <component id="c5ac8" class="javax.swing.JButton" binding="btnExecutar">
         <constraints>
-          <grid row="1" column="1" row-span="14" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="14" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <foreground color="-16514557"/>
-          <text value="Click here"/>
+          <text value="Executar"/>
         </properties>
       </component>
       <component id="54138" class="javax.swing.JTextField" binding="textField1" default-binding="true">
@@ -47,13 +47,13 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="82f2e" class="javax.swing.JLabel">
+      <component id="82f2e" class="javax.swing.JLabel" binding="txtOperacao">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <foreground color="-16514557"/>
-          <text value="+"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="7d178" class="javax.swing.JLabel">
@@ -75,7 +75,7 @@
       </component>
       <component id="59775" class="javax.swing.JLabel" binding="lblEntrada1">
         <constraints>
-          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Entrada1"/>
@@ -83,10 +83,33 @@
       </component>
       <component id="c4918" class="javax.swing.JLabel" binding="lblEntrada2">
         <constraints>
-          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Entrada2"/>
+        </properties>
+      </component>
+      <component id="439f0" class="javax.swing.JComboBox" binding="boxEscolhaMatematica">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="indefinido"/>
+            <item value="soma"/>
+            <item value="subtração"/>
+            <item value="divisão"/>
+            <item value="multiplicação"/>
+          </model>
+        </properties>
+      </component>
+      <component id="70117" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16514557"/>
+          <text value="Selecione a operação matemática"/>
         </properties>
       </component>
     </children>

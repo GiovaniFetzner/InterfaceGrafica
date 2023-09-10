@@ -1,7 +1,10 @@
+package calculadora;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class calculadora extends JFrame {
+
+public class Calculadora extends JFrame {
     private JButton btnExecutar;
     private JTextField textField1;
     private JPanel Painel;
@@ -11,7 +14,7 @@ public class calculadora extends JFrame {
     private JLabel txtOperacao;
     private int total;
 
-    public calculadora() {
+    public Calculadora() {
         textField1.setText("0");
         textField2.setText("0");
         lblTotal.setSize(5, 3);
@@ -27,7 +30,7 @@ public class calculadora extends JFrame {
                     textField2.setText("0");
 
 
-                double input1, input2, result;
+                double input1, input2, result = 0;
 
                 input1 = Double.parseDouble(textField1.getText().replace(",", "."));
                 input2 = Double.parseDouble(textField2.getText().replace(",", "."));
@@ -54,9 +57,10 @@ public class calculadora extends JFrame {
                         break;
                 }
 
-                if (lblTotal.getText().length() > 4 && !(boxEscolhaMatematica.getSelectedIndex() == 0)) {
-                   lblTotal.setText(lblTotal.getText().substring(0,8));
-                }
+                /* Corrigir formatação da String
+                * if (lblTotal.getText().length() > 4 && !(boxEscolhaMatematica.getSelectedIndex() == 0)) {
+                    lblTotal.setText(String.format("%.2f", Double.toString(result)));
+                }*/
 
 
             }
@@ -88,7 +92,7 @@ public class calculadora extends JFrame {
     }
 
     public static void main(String[] args) {
-        calculadora tela = new calculadora();
+        Calculadora tela = new Calculadora();
         tela.setContentPane(tela.Painel);
         tela.setTitle("Calculadora");
         tela.setSize(500, 150);

@@ -1,4 +1,4 @@
-package calculaIdade;
+package calculaidade;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

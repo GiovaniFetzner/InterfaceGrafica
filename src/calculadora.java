@@ -1,8 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-public class tela extends JFrame {
+public class calculadora extends JFrame {
     private JButton btnExecutar;
     private JTextField textField1;
     private JPanel Painel;
@@ -12,7 +11,7 @@ public class tela extends JFrame {
     private JLabel txtOperacao;
     private int total;
 
-    public tela() {
+    public calculadora() {
         textField1.setText("0");
         textField2.setText("0");
         lblTotal.setSize(5, 3);
@@ -89,7 +88,7 @@ public class tela extends JFrame {
     }
 
     public static void main(String[] args) {
-        tela tela = new tela();
+        calculadora tela = new calculadora();
         tela.setContentPane(tela.Painel);
         tela.setTitle("Calculadora");
         tela.setSize(500, 150);

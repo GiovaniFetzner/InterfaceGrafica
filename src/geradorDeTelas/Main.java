@@ -3,6 +3,7 @@ package geradorDeTelas;
 import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
